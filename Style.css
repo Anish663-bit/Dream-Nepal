@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#ticketContainer {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.ticket {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ticket.booked {
+    background-color: red;
+    color: white;
+}
+
+#pagination {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pagination button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    
+
+}
