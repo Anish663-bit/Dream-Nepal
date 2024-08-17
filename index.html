@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>5 AM</h1>
+        <div id="ticketContainer"></div>
+        <div id="pagination"></div>
+        <div id="bookingSection">
+            <h2>Booking Section</h2>
+            <p>Booked Tickets: <span id="bookedCount">0</span></p>
+            <button onclick="confirmBooking()">Confirm Booking</button>
+        </div>
+        <div id="billingSection" style="display:none;">
+            <h2>Billing Section</h2>
+            <p id="bookedTickets"></p>
+        </div>
+        <div id="winnerSection">
+            <h2>Winner Selection</h2>
+            <button onclick="selectWinners()">Select Winners</button>
+            <p id="winners"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
